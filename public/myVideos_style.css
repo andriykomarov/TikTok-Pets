@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  padding: 0;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.promptText {
+  display: flex;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 70px;
+}
+#title {
+  font-family: 'Boogaloo', sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  position: absolute;
+}
+#videoArea {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-self: center;
+  max-width: 1512px;
+}
+.vidInfo {
+  display: flex;
+  margin-bottom: 30px;
+}
+#playGame {
+  align-self: center;
+  margin-top: 100px;
+  opacity: 0.5;
+}
+
+.buttons {
+  width: 215px;
+  height: 70px;
+  background: rgba(238,29,82,0.9);
+  color: white;
+  border-radius: 15px;
+  box-shadow: 0 0 5px rgba(105,201,208,0.9);
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  /*box-shadow: 0 0 10px rgba(105,201,208,0.9);*/
+}
+
+#addNew {
+  position: relative;
+  margin-left: 75%;
+}
+
+.deleteButtons {
+  color: rgba(238,29,82,0.9);
+  font-family: 'Boogaloo', sans-serif;
+  font-weight: 400;
+  font-size: 55px;
+  background-color: transparent;
+}
+
+.textArea {
+  background-color: rgba(250,250,250,255);
+  border: 2px dashed rgba(186,186,186,255);
+  height: 52px;
+  width: 493px;
+  border-radius: 10px; 
+  align-self: center;
+  margin-right: 24px;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-indent: 25px;
+  line-height: 52px;
+}
+
+@media only screen and (max-width: 1110px) {
+  #playGame {
+    margin-bottom: 40px;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #videoArea {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  
+  .vidInfo {
+    margin-bottom: 20px;
+    margin-right: 0px;
+  }
+
+  #playGame {
+    align-self: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  #addNew {
+    margin-left: 65%;
+  }
+
+  .header {
+    margin-top: 50px;
+    margin-bottom: 70px;
+    align-items: center;
+  }
+
+  .buttons {
+    font-size: 20px;
+  }
+
+  #title {
+    padding-right: 0px;
+  }
+
+  .deleteButtons {
+    font-size: 60px;
+  }
+
+  .textArea {
+    font-size: 18px;
+    width: 500px;
+  }
+  .promptText {
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+
+  #addNew {
+    position: relative;
+    margin-left: 50%;
+  }
+
+  .promptText {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+
+  .vidInfo {
+    width: 280px;
+    margin-bottom: 10px;
+  }
+
+  #playGame {
+    align-self: center;
+    margin-top: 35px;
+  }
+
+  .buttons {
+    border-radius: 20px;
+    font-size: 16px;
+    width: 135px;
+    height: 55px;
+  }
+
+  #title {
+    padding-right: 240px;
+    font-size: 32px;
+  }
+
+  .deleteButtons {
+    font-size: 36px;
+  }
+
+  .textArea {
+    font-size: 14px;
+    width: 330px;
+    height: 30px;
+    line-height: 30px;
+  }
+  .header {
+    margin-top: 25px;
+    margin-bottom: 50px;
+  }
+}

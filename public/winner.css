@@ -1,0 +1,63 @@
+.winnerHeader {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  padding-top: 30px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.reload {
+  margin-top: 35px;
+}
+
+.vidTitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+div.video {
+  padding-top: 0px;
+}
+
+
+@media screen and (max-width:900px) {
+  div.video{
+    margin-top: 11%;
+  }
+  .winnerHeader {
+    padding-bottom: 0px;
+  }
+}
+
+@media screen and (max-width:700px) {
+  div.headerRight {
+      width: 30%;
+      justify-content: center;
+    }
+
+  div.video {
+    margin-top: 5%;
+  }
+  
+}

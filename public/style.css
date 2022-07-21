@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  width: 100%;
+}
+.Header{
+  padding: 0;
+  margin: 0;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  /*justify-content: space-around;*/
+  align-items: center;
+  order: 1;
+}
+
+.SubmitArea{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  /*width: 390px;*/
+  /*height: 320px;*/
+  height: 60vh;
+  width: 70vh;
+  background-image: linear-gradient(115deg, rgba(238,29,82,0.9),rgb(105,201,208));
+  box-shadow: 0 0 5px rgba(105,201,208,0.9);
+  order: 2;
+}
+#formButton{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  order: 3;
+}
+label{
+  align-self: flex-start;
+}
+.text{
+  color: white;
+  font-family: 'Inter', sans-serif; 
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+#LogoText{
+  font-family: 'Boogaloo', cursive;
+  position: absolute;
+  font-size: 48px;
+}
+#title{
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+input{
+  border-radius: 10px;
+  /*height: 35px;*/
+  /*width: 300px;*/
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  width: 55vh;
+  height: 7vh;
+  box-shadow: 0 0 8px rgba(105,201,208,0.9);
+  text-indent: 15px;
+}
+input[type=text]:focus{
+  box-shadow: 0 0 15px rgba(105,201,208,0.9);
+}
+::placeholder {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  text-indent: 15px;
+  font-size: 16px;
+}
+.buttons{
+  width: 215px;
+  height: 70px;
+  background: rgba(238,29,82,0.9);
+  color: white;
+  border-radius: 15px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  box-shadow: 0 0 5px rgba(105,201,208,0.9);
+
+}
+.searchField{
+  margin-bottom: 7px;
+}
+
+#videoButton {
+  position: relative;
+  margin-left: 75%;
+}
+
+@media only screen and (max-width: 900px) {
+  .Header {
+    justify-content: space-between;
+    width: 50vh;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0px;
+  }
+  #videoButton {
+    margin-left: auto;
+  }
+
+  .SubmitArea {
+    width: 50vh;
+    height: 50vh;
+  }
+
+  input {
+    width: 40vh;
+    height: 7vh;
+  } 
+  
+@media only screen and (max-width: 700px) {
+    #videoButton {
+    margin-left: auto;
+  }
+  
+  .SubmitArea {
+    width: 50vh;
+    height: 60vh;
+  }
+
+  input {
+    width: 40vh;
+    height: 7vh;
+  }
+
+  .Header {
+    justify-content: space-between;
+    width: 50vh;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  #LogoText {
+      font-size: 32px;
+  }
+
+  #title {
+      font-size: 20px;
+  }
+
+  .buttons {
+      width: 135px;
+      height: 55px;
+      border-radius: 15px;
+      font-size: 16px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+
+}

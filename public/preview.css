@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* put the colors in CSS variables */
+  --ttmagenta: rgba(238, 29, 82, 0.8);
+
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#continue {
+  background-color: var(--ttmagenta);
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  box-shadow: 0 0 5px rgba(105,201,208,0.9);
+  width: 215px;
+  height: 70px; 
+  border-radius: 15px;
+  margin: 30px;
+  margin-left: 35%;
+  position: absolute;
+}
+
+#reload {
+  font-size: 65px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: var(--ttmagenta);
+  margin-top: 30px;
+}
+
+div.video {
+  display: flex;
+  flex-direction: column;
+  width: 325px;
+  padding: 15px;
+  padding-bottom: 15px;
+  padding-top: 0px;
+  border-radius: 20px;
+  background-color: var(--ttmagenta);
+  order: 2;
+}
+
+blockquote {
+  border-style: solid;
+  border-color:  var(--ttmagenta);
+  border-width: 2px;
+  border-radius: 10px;
+  background-color:var(--ttmagenta);
+}
+
+iframe {
+  margin-top: -1px;
+  margin-left: -1px;
+}
+
+.pageTitle {
+  font-family: 'Boogaloo', sans-serif;
+  font-size: 48px;
+  margin-bottom: 45px;
+  order: 1;
+}
+
+#videoTitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  align-self: center;
+  color: white;
+}
+
+.buttonBar {
+  display: flex;
+  order: 3;
+}
+
+@media only screen and (max-width: 1300px) {
+  #continue {
+    margin-left: 28%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .buttonBar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .pageTitle {
+    margin-bottom: 75px;
+  }
+
+  #continue {
+    margin-top: 265px;
+    margin-left: 30px;
+  }
+
+  #reload {
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  main {
+    margin-top: -90px;
+  }
+  
+  .pageTitle {
+    margin-bottom: 30px;
+    font-size: 32px;
+  }
+  
+  div.video {
+    transform: scale(0.7);
+    margin-top: -100px;
+  }
+  
+  #continue {
+    margin-top: 160px;
+    margin-bottom: -20px;
+    width: 135px;
+    height: 55px;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #reload {
+    font-size: 44px; 
+    margin-top: -80px;
+  }
+  
+  #videoTitle {
+    font-size: 24px;
+  }
+}
