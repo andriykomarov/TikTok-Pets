@@ -236,7 +236,7 @@ async function deleteVideo(nickname) {
 }
 
 async function getDBCount() {
-  const sql = 'select count(1) from VideoTable'
+  const sql = 'select count(1) from PrefTable'
   let result = await db.get(sql)
   return result
 }
